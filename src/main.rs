@@ -3,6 +3,15 @@ use std::env;
 mod day01;
 mod day02;
 mod day03;
+mod day04;
+mod day05;
+mod day06;
+mod day07;
+mod day08;
+mod day09;
+mod day10;
+mod day11;
+mod day12;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -12,6 +21,15 @@ fn main() {
         "1" => day01::solve(),
         "2" => day02::solve(),
         "3" => day03::solve(),
-        _ => eprintln!("Day {} not implemented", day),
+        "4" => day04::solve(),
+        "5" => day05::solve(),
+        "6" => day06::solve(),
+        "7" => day07::solve(),
+        "8" => day08::solve(),
+        "9" => day09::solve(),
+        "10" => day10::solve(),
+        "11" => day11::solve(),
+        "12" => day12::solve(),
+        _ => eprintln!("Invalid day: {}", day),
     }
 }
